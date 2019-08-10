@@ -1,7 +1,7 @@
 #!/bin/sh
 
-ngx_path=$HOME/nginx
-src_path=$HOME/github/ngx_cpp_dev
+ngx_path=$HOME/Downloads/annotated_nginx-master/nginx
+src_path=$HOME/Downloads/ngx_cpp_dev
 
 build_date="${USER} build at `date '+%Y.%m.%d %H:%M'`"
 cc_opt="-g -O0"
@@ -11,7 +11,6 @@ prefix="--prefix=/opt/nginx_cpp"
 ngxpp_module="--add-module=${src_path}/ngxpp"
 
 modules="test echo filter
-         variables
          "
 
 http_modules=""
