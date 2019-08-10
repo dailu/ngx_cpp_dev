@@ -37,7 +37,7 @@ public:
 
         auto& cf = NdgTestModule::instance().conf().loc(r);
 
-        NgxLogError(r).print("hello c++");
+        NgxLogError(r).print("hello dailu cpp");
 
         if (!cf.enabled)
         {
@@ -45,7 +45,7 @@ public:
             return NGX_DECLINED;
         }
 
-        std::cout << "hello nginx" << std::endl;
+        std::cout << "hello nginx ls" << std::endl;
 
         //ngx_sleep(1);
         std::cout << clock.elapsed() << "s"<< std::endl;
